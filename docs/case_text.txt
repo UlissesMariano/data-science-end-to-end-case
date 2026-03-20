@@ -1,0 +1,82 @@
+Case de Data Science 
+Contexto 
+O Bolsa Família (atualmente integrado ao Programa Auxílio Brasil/Novo Bolsa Família) 
+é um dos principais instrumentos de política pública de combate à pobreza no Brasil. A 
+correta distribuição dos benefícios depende de fatores socioeconômicos complexos e 
+heterogêneos entre os municípios. 
+Este case propõe o uso de dados públicos governamentais, combinando: 
+ Informações administrativas do Programa Bolsa Família 
+ Indicadores socioeconômicos municipais do IBGE (SIDRA) 
+O objetivo é explorar quais variáveis explicam e predizem a quantidade de beneficiários 
+em cada município brasileiro. 
+Objetivo do Projeto 
+Construir um modelo preditivo supervisionado capaz de estimar: 
+ Quantidade de famílias beneficiárias do Bolsa Família por município 
+ A partir de indicadores sociais, econômicos e demográficos do IBGE, associados 
+ao território, exemplos: 
+o “Municípios com menor taxa de alfabetização tendem a concentrar maiores 
+quantidades de beneficiários” 
+o “Número de empresas per capita tem efeito negativo sobre a quantidade de 
+benefícios” 
+Perguntas de Negócio 
+1. Quais indicadores socioeconômicos mais influenciam a quantidade de 
+beneficiários? 
+2. É possível estimar a demanda potencial de benefícios em municípios? 
+3. Há municípios com subatendimento ou sobreconcentração de beneficiários? 
+4. Como esse modelo pode apoiar planejamento orçamentário e políticas 
+públicas? 
+Fontes de Dados 
+Bolsa Família – Benefícios Básicos e Variáveis 
+Fonte: https://dados.gov.br/dados/conjuntos-dados/bolsa-familia---beneficios-basicos-e
+variaveis 
+Principais variáveis sugeridas: 
+ Código do município (IBGE) 
+ Ano/mês de referência 
+ Conjunto de variáveis relacionadas ao target 
+Indicadores Socioeconômicos – IBGE / SIDRA 
+Fonte: https://sidra.ibge.gov.br/acervo#/A/Q 
+Indicadores Sugeridos (agregados por município) mas não exaustivo 
+ População total 
+ Percentual da população urbana 
+ Taxa de analfabetismo 
+ Renda média domiciliar per capita 
+ Taxa de desocupação 
+ Número de empresas sediadas no município 
+ Produto Interno Bruto (PIB) municipal 
+ Valor adicionado da agropecuária/serviços 
+ Percentual de domicílios com saneamento básico 
+Tabela de Apoio – Código dos Municípios 
+Fonte oficial IBGE 
+https://www.ibge.gov.br/explica/codigos-dos-municipios.php 
+Garante a padronização do código IBGE (7 dígitos) para realizar os joins corretos entre: 
+ Bolsa Família 
+ SIDRA (IBGE) 
+Modelagem Preditiva 
+Será avaliado as melhores práticas de desenvolvimento de modelos para modelo 
+supervisionado, algoritmos candidatos, feature importance, capacidade de discriminação 
+e métricas de avaliação e comparação de resultado. 
+Stack Tecnológico Sugerido 
+ Python (pandas, scikit-learn, xgboost) 
+ SQL (para agregações iniciais) 
+ Power BI / Tableau (visualização) 
+ GeoPandas (análise espacial) 
+Entregáveis Esperados 
+1. Dataset integrado e documentado 
+2. Análise exploratória (EDA) 
+3. Modelo preditivo validado 
+4. Relatório de insights explicáveis 
+5. Dashboard interativo por município 
+Regras e Recomendações do Desafio 
+Prazo de Execução 
+ O(a) candidato(a) terá 4 dias corridos para desenvolver o estudo. 
+ O trabalho deve ser realizado fora do horário de trabalho, respeitando a 
+disponibilidade pessoal do candidato. 
+Originalidade 
+ Não é permitido utilizar cases prontos da internet, repositórios previamente 
+existentes ou tutoriais que reproduzam soluções completas. 
+ O estudo deve refletir raciocínio analítico próprio, escolhas metodológicas 
+justificadas e capacidade de adaptação aos dados reais 
+Apresentação do Case 
+ O(a) candidato(a) deverá preparar um material de apresentação com duração 
+total de 30 minutos. 
+Boa sorte! 

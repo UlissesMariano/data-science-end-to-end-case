@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Dados / Arquivos de saída
+data/
+*.csv
+*.parquet
+*.json
+*.db
+*.sqlite3
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Configurações de IDE e Editor
+.vscode/
+.idea/
+*.swp
+
+# Arquivos do Sistema Operacional
+.DS_Store
+Thumbs.db
