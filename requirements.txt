@@ -134,3 +134,6 @@ plotly
 python-pptx
 lightgbm
 scikit-optimize
+geopandas
+geobr
+mapclassify
