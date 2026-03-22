@@ -8,6 +8,31 @@ import plotly.graph_objects as go
 
 st.set_page_config(page_title="Dashboard Bolsa Família", layout="wide", page_icon="🌐")
 
+# Customização de CSS para aumentar levemente os textos e títulos
+st.markdown("""
+<style>
+/* Títulos maiores (h1, h2, h3) */
+h1 {
+    font-size: 2.6rem !important;
+}
+h2 {
+    font-size: 2.1rem !important;
+}
+h3 {
+    font-size: 1.5rem !important;
+}
+/* Títulos das Abas */
+button[data-baseweb="tab"] div p {
+    font-size: 1.35rem !important;
+    font-weight: 600 !important;
+}
+/* Aumentar de leve as fontes de parágrafo / textos corridos */
+div[data-testid="stMarkdownContainer"] p {
+    font-size: 1.15rem !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 @st.cache_data
 def load_and_prepare_data():
     df = pd.read_csv("data/base_final.csv")
