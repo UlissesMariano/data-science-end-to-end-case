@@ -16,6 +16,7 @@ ENV/
 
 # Dados / Arquivos de saída
 data/
+examples/
 *.csv
 *.parquet
 *.json
